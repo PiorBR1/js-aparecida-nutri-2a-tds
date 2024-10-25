@@ -29,8 +29,9 @@ for (var i = 0; i < pacientes.length; i++) {
         alturaEhValida = false;
         tdImc.textContent = "Altura inválida";
     }
-    if (alturaEhValida && pesoEhValido) {
+
+  if (alturaEhValida && pesoEhValido) {
         var imc = peso / (altura * altura);
-        tdImc.textContent = imc.toFixed(0);
+        tdImc.textContent = imc.toFixed(2);
     }
 }

@@ -12,14 +12,14 @@ var altura = tdAltura.textContent;
 var pesoEhValido = true;
 var alturaEhVaido = true;
 
-if (peso <=0 || peso >=1000) {
+if (peso <=0 || peso >= 1000) {
    pesoEhValido = false;
    tdImc.textContent = "Peso invalido";
 }
 
-if (altura <= 0 || altura >=1000){
+if (altura <= 0 || altura >= 3.00){
    alturaEhVaido = false;
-   tdImc.textContent = "Peso Invalido";
+   tdImc.textContent = "Altura Invalida";
 }
 
 
